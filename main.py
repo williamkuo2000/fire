@@ -192,9 +192,9 @@ for name in enter:
     if i % nl == 0: text += '\n'
     i += 1
 if SEND_JAMES:
-    headers = {'Authorization':'Bearer C+3qN/mrPwIjiicgaZt79EssqF6szgEgrl1rJKoKxaBDH61k57BUeeTzc181uHbpwTxQJ7IxgcWSAJUIqY1gHsMB5wkgLRnptO2eeDe6erZNuGqTcDLDVpZTkybaWsWZsXa4TzdmqXx8GLkGwR4yGgdB04t89/1O/w1cDnyilFU=','Content-Type':'application/json'}
+    headers = {'Authorization':'Bearer ','Content-Type':'application/json'}
     body = {
-        'to':'U56039fc28c9ecf3b2f444fd4108b1731',
+        'to':'',
         'messages':[{
                 'type': 'text',
                 'text': text
@@ -203,9 +203,9 @@ if SEND_JAMES:
     req = requests.request('POST', 'https://api.line.me/v2/bot/message/push', headers=headers, data=json.dumps(body).encode('utf-8'))
     print(req.text)
 
-    headers = {'Authorization':'Bearer a8IqS666w5RMMFYRy6OxgtR+YEDPHODepy+HI+i5DG/qh/fou+RP83XWiDn1u/bdnFs7Qd1t5mA/HXtjiQUjiBlLbw8NPJD9Y+jfZZH8li8um4PwoleX+d4QIoCAHGapn+Tjr9BBI92mjnP+7uN8mgdB04t89/1O/w1cDnyilFU=','Content-Type':'application/json'}
+    headers = {'Authorization':'Bearer ','Content-Type':'application/json'}
     body = {
-        'to':'U9c8ef0cb68f98065d611daa716bae7da',
+        'to':'',
         'messages':[{
                 'type': 'text',
                 'text': text
@@ -215,9 +215,9 @@ if SEND_JAMES:
     print(req.text)
 
 if SEND_WILLK:
-    headers = {'Authorization':'Bearer hFBCeMw0u2PF8k3vYYM24yAPuAMZMz22HCpDIjwYSwix7ENz/KJLWdi5e4zAPIjMPSF2J8av2B3Vvw/D9sSAyrsL1Em6F9J/zbP0OgDgK+HjXehFPoBDUhRgDu1fwEeVFlX1RIqWkRh6eN6pFCPqGgdB04t89/1O/w1cDnyilFU=','Content-Type':'application/json'}
+    headers = {'Authorization':'Bearer ','Content-Type':'application/json'}
     body = {
-        'to':'Uad67ac58b20653d28f3a2ab6b48585df',
+        'to':'',
         'messages':[{
                 'type': 'text',
                 'text': text
